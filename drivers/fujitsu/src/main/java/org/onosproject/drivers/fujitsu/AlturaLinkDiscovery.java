@@ -223,7 +223,7 @@ public class AlturaLinkDiscovery extends AbstractHandlerBehaviour
                         AlarmService alarmService = this.handler().get(AlarmService.class);
                         try {
                             for ( Alarm a : alarmService.getAlarms(localDeviceId)) {
-                                if ( (a.id().toString().contains("RXS")) || (a.id().toString().contains("Rx LOCK ERR")) ) {
+                                if ( (a.id().toString().contains("Inconsistent config with neighbor")) || (a.id().toString().contains("RXS")) || (a.id().toString().contains("Rx LOCK ERR")) ) {
                                     log.info("-- No se pudo formar el enlace, el dispositivo local {} contiene alarmas --", localDeviceId.toString());
                                     continue aLoopName;
                                 }
