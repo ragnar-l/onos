@@ -47,7 +47,7 @@ import java.util.Collection;
 import org.xml.sax.SAXException;
 
 import static org.slf4j.LoggerFactory.getLogger;
-
+import org.apache.commons.lang.StringUtils;
 /**
  * Translates NETCONF notification messages to actions on alarms.
  */
