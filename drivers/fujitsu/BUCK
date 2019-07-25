@@ -7,6 +7,7 @@ COMPILE_DEPS = [
     '//cli:onos-cli',
     '//apps/optical-model:onos-apps-optical-model',
     '//incubator/api:onos-incubator-api',
+    '//core/net:onos-core-net',
 ]
 
 TEST_DEPS = [
@@ -26,12 +27,14 @@ osgi_jar_with_tests (
     resources = glob(['src/main/resources/**']),
 )
 
+
+
 onos_app (
-    app_name = 'org.onosproject.drivers.fujitsu',
-    title = 'Fujitsu Drivers',
+    app_name = 'org.onosproject.drivers.altura',
+    title = 'Altura Drivers',
     category = 'Drivers',
     url = 'http://onosproject.org',
-    description = 'Adds support for Fujitsu devices.',
+    description = 'Adds support for Altura devices.',
     included_bundles = BUNDLES,
-    required_apps = [ 'org.onosproject.netconf', 'org.onosproject.optical-model', 'org.onosproject.drivers.optical' ],
-)
+    required_apps = [ 'org.onosproject.faultmanagement', 'org.onosproject.netconf', 'org.onosproject.optical-model', 'org.onosproject.drivers.optical', 'org.onosproject.linkdiscovery' ],
+     )

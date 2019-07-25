@@ -33,9 +33,15 @@ public final class FujitsuVoltXmlUtility {
     public static final String EDIT_CONFIG = "edit-config";
     public static final String RUNNING = "running";
 
+
+
+    // CAMBIAR ESTO POR EL nombre de modulo y namespace
     public static final String VOLT_NE_NAMESPACE =
-            "xmlns=\"http://fujitsu.com/ns/volt/1.1\"";
-    public static final String VOLT_NE = "volt-ne";
+            "xmlns=\"http://helloworld.com/ns/helloworld\"";
+    public static final String VOLT_NE = "helloworld";
+
+
+
     public static final String PONLINK_ID = "ponlink-id";
     public static final String ONU_ID = "onu-id";
 
